@@ -1,5 +1,9 @@
-# Convert Darknet YOLOv4 or YOLOv3 to TensorFlow Model
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+# Convert Darknet YOLOv4  to TensorFlow Model
+
+
+![WhatsApp Image 2022-05-21 at 18 07 19](https://user-images.githubusercontent.com/73169815/169657646-049e7426-7265-4410-beb5-d30ba69620dc.jpeg)
+
+
 
 YOLOv4, YOLOv4-tiny Implemented in Tensorflow 2.3. 
 
@@ -16,6 +20,8 @@ This repository shows how to convert YOLO v4, YOLOv3, YOLO tiny .weights to .pb,
 3. [Convert YOLOv4 to tflite](#convert-to-tflite)
    * [Run Objection Detection using TFLite Model](#run-object_detection-using-tflite-model)
 4. [FPS Comparison](#fps-comparison)
+
+https://user-images.githubusercontent.com/73169815/169657617-2735fff3-3541-455f-afc1-dafab6f3d627.mp4
 
 
 
@@ -98,7 +104,8 @@ python detect_video.py --weights ./checkpoints/yolov4-416 --size 416 --model yol
 #### Output
 
 ##### Yolov4 original weight
-<p align="center"><img src="ahmad.png" width="640"\></p>
+<img width="254" alt="צילום מסך 2022-05-16 152712" src="https://user-images.githubusercontent.com/73169815/169657457-92334c76-6807-4e9c-a4cf-d81acb3c2fd0.png">
+
 
 # Convert to tflite
 
@@ -127,7 +134,8 @@ python detect_video.py --weights ./checkpoints/yolov4-416.tflite --size 416 --mo
 
 ```
 ##### Yolov4 tflite int8 weight
-<p align="center"><img src="ahmad.png" width="640"\></p>
+
+![הורדה](https://user-images.githubusercontent.com/73169815/169657422-86d7d3db-eb07-4111-8463-b353043c9e99.png)
 
 Yolov4 and Yolov4-tiny int8 quantization have some issues. I will try to fix that. You can try Yolov3 and Yolov3-tiny int8 quantization 
 # Convert to TensorRT
@@ -199,3 +207,4 @@ python train.py
 python train.py --weights ./data/yolov4.weights
 ```
 The training performance is not fully reproduced yet, so I recommended to use Alex's [Darknet](https://github.com/AlexeyAB/darknet) to train your own data, then convert the .weights to tensorflow or tflite.
+![WhatsApp Image 2022-05-16 at 15 57 27](https://user-images.githubusercontent.com/73169815/169657403-3f3e0332-64b6-487f-8ad2-6f68d7f1e16a.jpeg)
