@@ -5,9 +5,6 @@
 
 
 
-Open In Colab
-
-
 
 YOLOv4, YOLOv4-tiny Implemented in Tensorflow 2.3. 
 
