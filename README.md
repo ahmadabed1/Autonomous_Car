@@ -156,6 +156,10 @@ python convert_trt.py --weights ./checkpoints/yolov3-tiny.tf --quantize_mode flo
 python save_model.py --weights ./data/yolov4.weights --output ./checkpoints/yolov4.tf --input_size 416 --model yolov4
 python convert_trt.py --weights ./checkpoints/yolov4.tf --quantize_mode float16 --output ./checkpoints/yolov4-trt-fp16-416
 ```
+
+![image](https://user-images.githubusercontent.com/73169815/184971494-0577b16b-fe86-4977-8ae9-8593562af51c.png)
+
+
 # FPS Comparison
 
 We use ``japan.mp4`` for all the experiments and report following results.
